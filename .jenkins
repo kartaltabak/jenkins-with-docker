@@ -1,3 +1,5 @@
 @Library('github-jenkins-pipeline') _
 
-dockerBuildPipeline()
+dockerBuildPipeline(
+        mainBranchCron: '@weekly'
+)
