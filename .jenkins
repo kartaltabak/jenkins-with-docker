@@ -2,7 +2,7 @@
 
 dockerBuildPipeline(
         mainBranchCron: '@weekly',
-        ikmageBuilder: [
+        imageBuilder: [
                 baseImage       : 'jenkins/jenkins:jdk11',
                 registryRepoName: 'kartaltabak/jenkins-with-docker',
                 imageTestCommand: 'docker --version'
