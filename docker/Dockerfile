@@ -50,6 +50,7 @@ RUN jenkins-plugin-cli \
     ssh-slaves \
     mysql-api \
     locale \
-    git-forensics
+    git-forensics \
+    pipeline-maven-database
 
 VOLUME $MAVEN_DIR
