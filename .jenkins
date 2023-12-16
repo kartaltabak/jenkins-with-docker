@@ -5,6 +5,7 @@ dockerBuildPipeline(
         imageBuilder: [
                 baseImage       : 'jenkins/jenkins:jdk17',
                 registryRepoName: 'kartaltabak/jenkins-with-docker',
-                imageTestCommand: 'docker --version'
+                imageTestCommand: 'docker --version',
+                tagCommand      : "ktversion"
         ]
 )
