@@ -61,8 +61,8 @@ ARG KTVERSION_FILE="/sbin/ktversion"
 RUN echo "#!/usr/bin/env bash" > $KTVERSION_FILE && \
     echo -n "echo " >> $KTVERSION_FILE && \
     echo -n "Jenkins.${JENKINS_VERSION}." >> $KTVERSION_FILE && \
-    echo -n "$(java --version | head -1 | awk '{ printf("%s.%s.\n", $1, $2);}')" >> $KTVERSION_FILE && \
-    echo "$(docker --version | awk 'BEGIN{ FS="[ ,]"; }{ printf("Docker.%s\n", $3);}')" >> $KTVERSION_FILE && \
+#    echo -n "$(java --version | head -1 | awk '{ printf("%s.%s.\n", $1, $2);}')" >> $KTVERSION_FILE && \
+#    echo "$(docker --version | awk 'BEGIN{ FS="[ ,]"; }{ printf("Docker.%s\n", $3);}')" >> $KTVERSION_FILE && \
     chmod +x $KTVERSION_FILE
 
 USER jenkins
