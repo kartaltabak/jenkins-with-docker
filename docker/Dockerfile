@@ -46,7 +46,6 @@ RUN jenkins-plugin-cli \
     warnings-ng \
     google-play-android-publisher \
     docker-workflow \
-    code-coverage-api \
     ssh-slaves \
     mysql-api \
     locale \
