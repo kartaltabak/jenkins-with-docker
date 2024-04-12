@@ -50,7 +50,8 @@ RUN jenkins-plugin-cli \
     mysql-api \
     locale \
     git-forensics \
-    pipeline-maven-database
+    pipeline-maven-database \
+    coverage
 
 VOLUME $MAVEN_DIR
 
