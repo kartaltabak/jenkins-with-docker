@@ -39,7 +39,7 @@ jobs:
             BASE_IMAGE=jenkins/jenkins:jdk17
 
       - name: Run Docker test command
-        run: docker run --rm ${TEST_TAG} docker --version
+        run: docker run --rm ${{ env.TEST_TAG }} docker --version
 
       # Step 6: Generate custom tag
       - name: Generate custom tag
