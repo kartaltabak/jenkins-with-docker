@@ -9,8 +9,8 @@ on:
 
 env:
   IMAGE: kartaltabak/jenkins-with-docker
-  TEST_TAG: ${IMAGE}:test
-  LATEST_TAG: ${IMAGE}:latest
+  TEST_TAG: ${{ env.IMAGE }}:test
+  LATEST_TAG: ${{ env.IMAGE }}:latest
 
 jobs:
   build-and-push:
