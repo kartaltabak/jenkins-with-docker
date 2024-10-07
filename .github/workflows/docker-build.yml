@@ -34,7 +34,7 @@ jobs:
         with:
           context: ./docker
           load: true
-          tags: ${TEST_TAG}
+          tags: ${{ env.TEST_TAG }}
           build-args: |
             BASE_IMAGE=jenkins/jenkins:jdk17
 
