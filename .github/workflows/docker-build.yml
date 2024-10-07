@@ -9,8 +9,8 @@ on:
 
 env:
   IMAGE: kartaltabak/jenkins-with-docker
-  TEST_TAG: ${{ env.IMAGE }}:test
-  LATEST_TAG: ${{ env.IMAGE }}:latest
+  TEST_TAG: kartaltabak/jenkins-with-docker:test
+  LATEST_TAG: kartaltabak/jenkins-with-docker:latest
 
 jobs:
   build-and-push:
@@ -54,6 +54,6 @@ jobs:
           context: ./docker
           push: true
           tags: |
-            kartaltabak/jenkins-with-docker:${{ env.DATE_TAG }}
-            kartaltabak/jenkins-with-docker:${{ env.KT_VERSION }}
-            kartaltabak/jenkins-with-docker:latest
+            ${{ env.IMAGE }}:${{ env.DATE_TAG }}
+            ${{ env.IMAGE }}:${{ env.KT_VERSION }}
+            ${{ env.IMAGE }}:latest
