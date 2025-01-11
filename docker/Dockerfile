@@ -40,7 +40,6 @@ RUN jenkins-plugin-cli \
     blueocean \
     metrics \
     jobConfigHistory \
-    jacoco \
     pipeline-maven \
     gradle \
     warnings-ng \
